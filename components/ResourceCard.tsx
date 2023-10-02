@@ -11,7 +11,7 @@ interface Props {
   downloadlink:string
 }
 
-const ResourceCard = ({  id, title, image, downloadnumber, downloadlink }) => {
+const ResourceCard = ({  id, title, image, downloadnumber, downloadlink } : Props) => {
   return (
     <Card className="w-full max-w-fit border-0 !bg-transparent sm:max-w-[356px] ">
       <Link href={`/resource/${id}`}>
